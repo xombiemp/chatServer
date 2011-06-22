@@ -1,0 +1,95 @@
+/* Content Layout and Appearance */
+body {
+	margin: 0;
+	padding: 0;
+	background: #111;
+	height: 646px;
+}
+#container {
+	position:relative;
+	top:0;
+	margin:0 auto;
+	padding: 0;
+	width:1101px;
+	height: 100%;
+}
+#bg {
+	margin: 0;
+	padding: 0;
+}
+#myForm{
+	margin: 0;
+	padding: 0;
+}
+
+#chatArea {
+	position: absolute;
+	top: 135px;
+	left: 385px;
+	height:287px;
+	width:323px;
+	font-family: Lucida Console, Monaco5, monospace;
+	font-weight: bold;
+	color: #2bfe9d;
+	background: url('images/chatText-bg.png') no-repeat;
+}
+#sendMessage {
+	position: absolute;
+	bottom: 149px;
+	left: 383px;
+	height: 57px;
+	width: 540px;
+	font-family: Lucida Console, Monaco5, monospace;
+	font-weight: bold;
+	color: #2bfe9d;
+	border: 1px solid #2bfe9d;
+	background: url('images/inputBox-bg.png') no-repeat;
+}
+#senderName {
+	position: absolute;
+	width: 219px;
+	top: 104px;
+	left: 389px;
+	font-family: Lucida Console, Monaco5, monospace;
+	font-weight: bold;
+	font-size: 110%;
+	text-align: center;
+	color: #2bfe9d;
+	border: none;
+	background: url('images/name-bg.png') no-repeat;
+}
+#fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#submit {
+	position: absolute;
+	bottom: 222px;
+	right: 268px;
+}
+#clear {
+	position: absolute;
+	bottom: 221px;
+	right: 149px;
+}
+.buttonStyle1, .buttonStyle1:link, .buttonStyle1:visited, .buttonStyle1:active, .buttonStyle1_ie6hover {
+
+	width:113px;
+	height:36px;
+	margin-right: 3px;
+	font-family: Lucida Console, Monaco5, monospace;
+	color:#2bfe9d;
+	text-decoration:none;
+	text-align:center;
+	font-weight:bold;
+	font-size:100%;
+	border: none;
+	background:url('images/button-style.png') top left no-repeat;
+}
+
+.buttonStyle1:hover, input.buttonStyle1:hover, .buttonStyle1_ie6hover {
+	text-decoration:underline;
+	color:#0c1b06;
+	background:url('images/button-style.png') bottom left no-repeat;
+}
