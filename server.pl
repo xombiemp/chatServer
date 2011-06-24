@@ -44,7 +44,7 @@ while ($client = $server->accept()) {
 			$sent = $emoticon->filter($sent);	#replace emoticons with image tags
 			
 			open (CHAT, "+>>chatHistory.txt") or die "Can't create new.txt: $!";	#open chatHistory.txt and write the name and message to it
-			print(CHAT "$name\: $sent <br />\n");
+			print(CHAT "$name\: $sent <br>\n");
 			close(CHAT);
 		}
 		
@@ -57,34 +57,34 @@ while ($client = $server->accept()) {
 		if (-e $page) {  #if the requested resource exists
 		
 			###Check the extention of the requested resource to print the appropriate Content-Type###
-			if ($page =~ /\.txt/) {
+			if ($page =~ /\.txt$/) {
 		    	print $client "HTTP/1.0 200 OK\nContent-Type: text/plain\n\n";
 			}
-			elsif ($page =~ /\.js/) {
+			elsif ($page =~ /\.js$/) {
 		    	print $client "HTTP/1.0 200 OK\nContent-Type: application/javascript\n\n";
 			}
-			elsif ($page =~ /\.html/) {
+			elsif ($page =~ /\.html$/) {
 				print $client "HTTP/1.0 200 OK\nContent-Type: text/html\n\n";
 			}
-			elsif ($page =~ /\.css/) {
+			elsif ($page =~ /\.css$/) {
 		    	print $client "HTTP/1.0 200 OK\nContent-Type: text/css\n\n";
 			}
-			elsif ($page =~ /\.htm/) {
+			elsif ($page =~ /\.htm$/) {
 		      print $client "HTTP/1.0 200 OK\nContent-Type: text/html\n\n";
 			}
-			elsif ($page =~ /\.pl/) {
+			elsif ($page =~ /\.pl$/) {
 		      print $client "HTTP/1.0 200 OK\nContent-Type: text/plain\n\n";
 			}
-			elsif ($page =~ /\.jpg/) {
+			elsif ($page =~ /\.jpg$/) {
 		      print $client "HTTP/1.0 200 OK\nContent-Type: image/jpeg\n\n";
 			}
-			elsif ($page =~ /\.jpeg/) {
+			elsif ($page =~ /\.jpeg$/) {
 		      print $client "HTTP/1.0 200 OK\nContent-Type: image/jpeg\n\n";
 			}
-			elsif ($page =~ /\.gif/) {
+			elsif ($page =~ /\.gif$/) {
 		      print $client "HTTP/1.0 200 OK\nContent-Type: image/gif\n\n";
 			}
-			elsif ($page =~ /\.png/) {
+			elsif ($page =~ /\.png$/) {
 		      print $client "HTTP/1.0 200 OK\nContent-Type: image/png\n\n";
 			}
 			

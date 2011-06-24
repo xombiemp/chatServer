@@ -24,6 +24,9 @@ body {
 
 #chatArea {
 	position: absolute;
+	overflow: auto;
+	word-wrap: break-word;
+	outline: none;
 	top: 135px;
 	left: 385px;
 	height:287px;
@@ -35,6 +38,7 @@ body {
 }
 #sendMessage {
 	position: absolute;
+	outline: none;
 	bottom: 149px;
 	left: 383px;
 	height: 57px;
@@ -47,6 +51,7 @@ body {
 }
 #senderName {
 	position: absolute;
+	outline: none;
 	width: 219px;
 	top: 104px;
 	left: 389px;
