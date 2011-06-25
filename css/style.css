@@ -12,6 +12,14 @@ body {
 	padding: 0;
 	width:1101px;
 	height: 100%;
+	background-image: url(/images/main.png);
+}
+#wrapper {
+	position: relative;
+	top: 135px;
+	margin:0 auto;
+	width:323px;
+	height:287px;
 }
 #bg {
 	margin: 0;
@@ -23,31 +31,30 @@ body {
 }
 
 #chatArea {
-	position: absolute;
 	overflow: auto;
 	word-wrap: break-word;
 	outline: none;
-	top: 135px;
-	left: 385px;
 	height:287px;
-	width:323px;
+	width:100%;
 	font-family: Lucida Console, Monaco5, monospace;
 	font-weight: bold;
 	color: #2bfe9d;
-	background: url('images/chatText-bg.png') no-repeat;
+	background: url('/images/chatText-bg.png') no-repeat;
 }
 #sendMessage {
 	position: absolute;
 	outline: none;
+	resize: none;
 	bottom: 149px;
 	left: 383px;
-	height: 57px;
+	height: 54px;
 	width: 540px;
 	font-family: Lucida Console, Monaco5, monospace;
 	font-weight: bold;
+	font-size: 100%;
 	color: #2bfe9d;
 	border: 1px solid #2bfe9d;
-	background: url('images/inputBox-bg.png') no-repeat;
+	background: url('/images/inputBox-bg.png') no-repeat;
 }
 #senderName {
 	position: absolute;
@@ -61,7 +68,7 @@ body {
 	text-align: center;
 	color: #2bfe9d;
 	border: none;
-	background: url('images/name-bg.png') no-repeat;
+	background: url('/images/name-bg.png') no-repeat;
 }
 #fieldset {
 	margin: 0;
@@ -90,11 +97,19 @@ body {
 	font-weight:bold;
 	font-size:100%;
 	border: none;
-	background:url('images/button-style.png') top left no-repeat;
+	background:url('/images/button-style.png') top left no-repeat;
 }
 
 .buttonStyle1:hover, input.buttonStyle1:hover, .buttonStyle1_ie6hover {
 	text-decoration:underline;
 	color:#0c1b06;
-	background:url('images/button-style.png') bottom left no-repeat;
+	background:url('/images/button-style.png') bottom left no-repeat;
+}
+
+::selection {
+	background: #4F5430; /* Safari */
+}
+
+::-moz-selection {
+	background: #4F5430; /* Firefox */
 }

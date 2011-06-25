@@ -139,7 +139,6 @@
                     event.preventDefault();
                     $(this).blur();
                     $(this).parents('form').submit();
-                    $(this).focus()
                     return false;
                 }
             });
