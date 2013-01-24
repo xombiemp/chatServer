@@ -46,7 +46,13 @@ $(document).ready(function() {
 		return false;
 	});
 		
-	$('#sendMessage').shiftenter();		// makes enter submit form and shift+enter enter a new line
+	$('#sendMessage').shiftenter({
+	    focusClass: 'shiftenter',             /* CSS class used on focus */
+	    inactiveClass: 'shiftenterInactive',  /* CSS class used when no focus */
+	    hint: '',   /* hint shown */
+	    metaKey: 'shift',                     /* meta key that triggers a line-break, allowed values: 'shift', 'ctrl' */
+	    pseudoPadding: '0 10'                 /* padding (bottom, right) of hint text */
+	});		// makes enter submit form and shift+enter enter a new line
 	
 	$('#clearButton').click(function(){		// called when clearButton is pressed
 		$.get("clearHistory");		// sends request to erase contents of chatHistory.txt

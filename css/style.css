@@ -42,6 +42,7 @@ body {
 	background: url('/images/chatText-bg.png') no-repeat;
 }
 #sendMessage {
+	overflow: auto;
 	position: absolute;
 	outline: none;
 	resize: none;
@@ -112,4 +113,24 @@ body {
 
 ::-moz-selection {
 	background: #4F5430; /* Firefox */
+}
+
+/* Turn on scrollbar */
+::-webkit-scrollbar {
+    width: 3px;
+}
+ 
+/* The thumb itself */
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #2bfe9d;
+}
+ 
+ textarea {
+    scrollbar-face-color: #2bfe9d;
+    scrollbar-track-color: black;
+    scrollbar-arrow-color: #2bfe9d;
+    scrollbar-highlight-color: #2bfe9d;
+    scrollbar-shadow-color: #2bfe9d;
+    scrollbar-3dlight-color: #2bfe9d;
+    scrollbar-darkshadow-color: #2bfe9d;
 }
