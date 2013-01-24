@@ -1,0 +1,17 @@
+div.shiftenter,
+div.shiftenterInactive {
+    position: absolute;
+    z-index: 1;
+    
+    font-size: 0.8em;
+    font-family: Lucida Console, Monaco5, monospace;
+    opacity: 0.4;
+    color: #2BFE9D;
+    filter: alpha(opacity=40);
+}
+div.shiftenter {
+    display: inline-block;
+}
+div.shiftenterInactive {
+    display: none;
+}
